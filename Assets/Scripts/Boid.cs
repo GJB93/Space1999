@@ -34,6 +34,7 @@ public class Boid : MonoBehaviour {
         if(velocity.magnitude > float.Epsilon)
         {
             transform.LookAt(velocity);
+            velocity *= 0.99f;
         }
 
         transform.position += velocity * Time.deltaTime;
