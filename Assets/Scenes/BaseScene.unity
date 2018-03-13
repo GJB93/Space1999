@@ -150,7 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gap: 20
   followers: 2
-  prefab: {fileID: 1671703278459934, guid: bb68ebcc8aee48b4099c0ddf70968077, type: 2}
+  prefab: {fileID: 1505773795689826, guid: 3f0d8d8031c81e04fb530f4942af283d, type: 2}
 --- !u!1 &1933615275
 GameObject:
   m_ObjectHideFlags: 0
