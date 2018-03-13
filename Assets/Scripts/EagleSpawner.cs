@@ -21,8 +21,8 @@ public class EagleSpawner : MonoBehaviour {
             //GameObject followerRight = Instantiate(prefab, transform.position + new Vector3((i * 20), 0, (i * 20)), transform.rotation);
             GameObject followerLeft = Instantiate(prefab, transform, false);
             GameObject followerRight = Instantiate(prefab, transform, false);
-            followerLeft.transform.position += new Vector3((i * -20), 0, (i * 20));
-            followerRight.transform.position += new Vector3((i * 20), 0, (i * 20));
+            followerLeft.transform.position += new Vector3((i * -gap), 0, (i * gap));
+            followerRight.transform.position += new Vector3((i * gap), 0, (i * gap));
             followerLeft.AddComponent<Boid>();
             followerRight.AddComponent<Boid>();
             followerLeft.AddComponent<OffsetPursue>().leader = leaderObject.GetComponent<Boid>();
